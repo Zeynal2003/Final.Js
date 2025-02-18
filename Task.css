@@ -1,0 +1,277 @@
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+h4 {
+    padding-left: 41px;
+}
+
+ul {
+    list-style-type: none;  
+    padding-left: 0;  
+    cursor: pointer;
+}
+
+li {
+    font-size: 18px; 
+    color: #5e5d5d;   
+    margin-bottom: 8px; 
+    padding: 5px 0;   
+    padding-left: 40px; 
+    transition: color 0.3s ease; 
+}
+
+li:hover {
+    color: #f8f8f8;  
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar1 ul li a {
+    margin-top: 10px;
+    padding: 10px;
+    color: gray;
+    text-decoration: none;
+}
+
+.navbar1 ul li {
+    margin-right: 20px;
+}
+
+.navbar1 ul li a:hover {
+    color: white;
+}
+
+.ater {
+    width: 50px;
+    height: 50px;
+    padding-left: 20px;
+    padding-bottom: 35px;
+}
+
+.cine {
+    padding-left: 20px;
+    padding-bottom: 35px;
+    color: white;
+    font-size: 24px;
+}
+
+.search-container {
+    color: gray;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding-left: 20px;
+    padding-bottom: 35px;
+    margin: 0 auto;
+    margin-right: 20px;
+    justify-content: flex-end;
+}
+
+#searchInput {
+    padding-left: 40px;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: rgb(60, 60, 60);
+}
+
+.bi-search {
+    padding-left: 18px;
+    position: absolute;
+    left: 15px;
+    font-size: 20px;
+    color: gray;
+}
+
+#movie-container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-left: 150px;
+    background-color: rgb(12, 12, 23);
+}
+
+#weekly-trending-movies-category {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+#top-rated-movies-category {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+#upcoming-movies-category {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.movie-row {
+    display: flex;
+    gap: 15px;
+    overflow-x: scroll;
+}
+
+.movie-row::-webkit-scrollbar {
+    overflow: hidden;
+}
+
+.movie {
+    width: 100px;
+    flex: 0 0 200px;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.movie img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie img:hover {
+    transform: scale(1.1);
+}
+
+.movie h3 {
+    margin-top: 15px;
+    font-size: 16px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+.movie p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.movie-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.movie-details .left {
+    display: flex;
+    align-items: center;
+}
+
+.movie-details .right {
+    text-align: right;
+    font-size: 14px;
+}
+
+.stars {
+    font-size: 12px;
+    color: yellow;
+}
+
+.right p {
+    font-size: 12px;
+    color: white;
+    background-color: #777;
+    margin:  5px;
+}
+
+/* Yeni eklenen arama sonuçları CSS */
+.search-results {
+    display: none; /* Başlangıçta gizli */
+    position: absolute;
+    top: 70px; /* Arama kutusunun hemen altında */
+    width: 100%;
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.search-results .movie {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-results .movie:hover {
+    background-color: #f0f0f0;
+}
+
+.search-results .movie img {
+    width: 50px;
+    height: 75px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-results .movie h3 {
+    font-size: 14px;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.featured-content {
+    position: relative;
+    background: url("image/slider-banner.jpg") no-repeat center center;
+    background-size: cover;
+    height: 90vh;
+    width: 150vh;
+    margin-left: 320px;
+    padding: 50px;
+    color: white;
+}
+
+.featured-desc {
+    position: absolute;
+    top: 30%;
+    left: 20px;
+    font-size: 1.5em;
+    max-width: 600px;
+    line-height: 1.5;
+    z-index: 1;
+}
+
+.featured-buttons {
+    position: absolute;
+    top: calc(30% + 1em);
+    left: 30px;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+.featured-buttons button {
+    background-color: #e50914;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.featured-buttons button i {
+    margin-right: 10px;
+}

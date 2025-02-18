@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Kategoriyaları</title>
+    <link rel="stylesheet" href="Task.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="navbar">
+        <img class="ater"  src="image/theater.png" alt="">
+        <h2 class="cine">CineFlow</h2>
+        <div class="search-container">
+            <input class="any" type="text" id="searchInput" placeholder="Hər hansı bir filmi axtar..." />
+            <i class="bi bi-search"></i>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="featured-content">
+                <h1>Alien: Romulus</h1>
+                <p>2024,08,13 Horror,Science Fiction</p>
+                <p>While scavenging the deep ends of a derelict space station, a <br>group of young space colonizers
+                    come face to face with the...</p>
+                <div class="featured-buttons">
+                    <button><i class="fas fa-play-circle"></i> Watch Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <div class="about">
+        <div class="kategoriya" >
+            <h4>Kategoriyalar</h4>
+            <ul id="genres-list" >
+                <li> </li>
+            </ul>
+        </div>
+
+        <div id="movie-container"> 
+            <div id="weekly-trending-movies-category"></div>
+            <div id="top-rated-movies-category"></div> 
+            <div id="upcoming-movies-category"></div>
+        </div>
+    </div>
+
+    <script src="Task.js"></script>
+</body>
+</html>
