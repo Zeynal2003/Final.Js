@@ -234,13 +234,13 @@ li:hover {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.featured-content {
+/* .featured-content {
     position: relative;
     background: url("image/slider-banner.jpg") no-repeat center center;
     background-size: cover;
     height: 90vh;
     width: 150vh;
-    margin-left: 320px;
+    margin-left: 310px;
     padding: 50px;
     color: white;
 }
@@ -274,4 +274,4 @@ li:hover {
 
 .featured-buttons button i {
     margin-right: 10px;
-}
+} */
