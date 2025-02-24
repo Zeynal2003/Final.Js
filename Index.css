@@ -1,31 +1,32 @@
+
 body {
     background-color: black;
     font-family: Arial, sans-serif;
     color: white;
-}
 
-h4 {
+}
+h4{
     padding-left: 41px;
 }
-
 ul {
     list-style-type: none;  
-    padding-left: 0;  
-    cursor: pointer;
-}
+        padding-left: 0;  
+        cursor: pointer;
+              
+  }
 
-li {
+  li {
     font-size: 18px; 
-    color: #5e5d5d;   
+    color: #666464;   
     margin-bottom: 8px; 
     padding: 5px 0;   
     padding-left: 40px; 
     transition: color 0.3s ease; 
-}
+  }
 
-li:hover {
+  li:hover {
     color: #f8f8f8;  
-}
+  }
 
 .navbar {
     display: flex;
@@ -93,14 +94,18 @@ li:hover {
     color: gray;
 }
 
+
+
 #movie-container {
-    margin-top: 100px;
+    min-width: 200px;
+    margin-top: 100px; 
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 25px;
     margin-left: 150px;
     background-color: rgb(12, 12, 23);
 }
+
 
 #weekly-trending-movies-category {
     padding: 20px;
@@ -130,12 +135,21 @@ li:hover {
     overflow: hidden;
 }
 
+.movie-row::-webkit-scrollbar {
+    overflow: hidden;
+}
+
+.movie-row::-webkit-scrollbar {
+    overflow: hidden;
+}
+
 .movie {
     width: 100px;
     flex: 0 0 200px;
     border-radius: 10px;
     padding: 10px;
     position: relative;
+    
 }
 
 .movie img {
@@ -155,6 +169,7 @@ li:hover {
     white-space: nowrap; 
     overflow: hidden; 
     text-overflow: ellipsis; 
+   
 }
 
 .movie p {
@@ -172,11 +187,13 @@ li:hover {
 .movie-details .left {
     display: flex;
     align-items: center;
+  
 }
 
 .movie-details .right {
     text-align: right;
     font-size: 14px;
+
 }
 
 .stars {
@@ -190,88 +207,37 @@ li:hover {
     background-color: #777;
     margin:  5px;
 }
-
-/* Yeni eklenen arama sonuçları CSS */
-.search-results {
-    display: none; /* Başlangıçta gizli */
-    position: absolute;
-    top: 70px; /* Arama kutusunun hemen altında */
-    width: 100%;
-    background-color: white;
-    color: black;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-height: 400px;
-    overflow-y: auto;
-    border-radius: 8px;
-    padding: 10px;
-    z-index: 1000;
-}
-
-.search-results .movie {
+.about{
     display: flex;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #eee;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-.search-results .movie:hover {
-    background-color: #f0f0f0;
+search-movie-row{
+    width: 100px;
+    height: 250px;
+}
+#movie-container {
+    display: block; 
 }
 
-.search-results .movie img {
-    width: 50px;
-    height: 75px;
-    border-radius: 5px;
-    margin-right: 10px;
+#search-results {
+    display: none;
+    margin-left: 150px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: rgb(12, 12, 23);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.search-results .movie h3 {
-    font-size: 14px;
-    margin: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-/* .featured-content {
-    position: relative;
-    background: url("image/slider-banner.jpg") no-repeat center center;
-    background-size: cover;
-    height: 90vh;
-    width: 150vh;
-    margin-left: 310px;
-    padding: 50px;
-    color: white;
+#search-results h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
 }
 
-.featured-desc {
-    position: absolute;
-    top: 30%;
-    left: 20px;
-    font-size: 1.5em;
-    max-width: 600px;
-    line-height: 1.5;
-    z-index: 1;
-}
+#search-movie-row {
 
-.featured-buttons {
-    position: absolute;
-    top: calc(30% + 1em);
-    left: 30px;
-    z-index: 2;
-    border-radius: 10px;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
 }
-
-.featured-buttons button {
-    background-color: #e50914;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    cursor: pointer;
-}
-
-.featured-buttons button i {
-    margin-right: 10px;
-} */

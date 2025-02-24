@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Film Kategoriyaları</title>
-    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="index.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
@@ -17,23 +17,26 @@
             <i class="bi bi-search"></i>
         </div>
     </div>
-    
   
     <div class="about">
         <div class="kategoriya" >
             <h4>Kategoriyalar</h4>
-            <ul id="genres-list" >
-                <li> </li>
-            </ul>
+            <ul id="genres-list"></ul>
         </div>
 
+        <div id="search-results" >
+            <h3>Axtarış nəticələri</h3>
+            <div id="search-movie-row" class="movie-row"></div>
+        </div>
         <div id="movie-container"> 
             <div id="weekly-trending-movies-category"></div>
             <div id="top-rated-movies-category"></div> 
             <div id="upcoming-movies-category"></div>
         </div>
+        
+        </div>
     </div>
-
-    <script src="Index.js"></script>
+    
+    <script src="index.js"></script>
 </body>
 </html>
